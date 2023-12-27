@@ -31,8 +31,8 @@ longitud = int(input("¿LONGITUD DE LA CLAVE?"))
 if longitud<8 or longitud>16:
     print("La longitud de la clave debe estar comprendida entre 8 y 16")
     exit()
-quieres_mayusculas = input(f"¿QUIERES QUE CONTENGA MAYÚSCULAS?").capitalize()
-quieres_numeros = input("¿QUIERES QUE CONTENGA NUMEROS?").capitalize()
-quieres_simbolos= input("¿QUIERES QUE CONTENGA SÍMBOLOS?").capitalize()
+quieres_mayusculas = input(f"¿QUIERES QUE CONTENGA MAYÚSCULAS (S/N)?").capitalize()
+quieres_numeros = input("¿QUIERES QUE CONTENGA NUMEROS? (S/N) ").capitalize()
+quieres_simbolos= input("¿QUIERES QUE CONTENGA SÍMBOLOS? (S/N)").capitalize()
 
 print("Password:\n" +GenerarClaves(12,quieres_mayusculas=="S",quieres_numeros=="S",quieres_simbolos=="S") )
